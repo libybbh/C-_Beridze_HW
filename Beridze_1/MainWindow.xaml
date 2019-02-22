@@ -15,9 +15,9 @@
             <ColumnDefinition Width="130*"/>
             <ColumnDefinition Width="40*"/>
         </Grid.ColumnDefinitions>
-        <DatePicker HorizontalAlignment="Left" SelectedDate="{Binding DateOfBirth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,71,0,0" VerticalAlignment="Top" Height="37" Width="153" Grid.Column="2" Grid.ColumnSpan="2" />
+        <DatePicker HorizontalAlignment="Left" SelectedDate="{Binding DateOfBirth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="4,79,0,0" VerticalAlignment="Top" Height="37" Width="153" Grid.Column="2" Grid.ColumnSpan="2" />
         
-        <Label Content="Please choose your birth date:" HorizontalAlignment="Left" Margin="21,70,0,0" VerticalAlignment="Top" Width="174" Grid.ColumnSpan="2"/>
+        <Label Content="Please choose your birth date:" HorizontalAlignment="Left" Margin="21,90,0,0" VerticalAlignment="Top" Width="174" Grid.ColumnSpan="2"/>
         <Label Content="Your age:" Margin="116,175,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60"/>
         <Label Content="Your zodiac sign:" HorizontalAlignment="Left" Margin="76,226,0,0" VerticalAlignment="Top" Width="100"/>
         <Label Content="Your chinese sign:" HorizontalAlignment="Left" Margin="72,279,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="113"/>
@@ -25,8 +25,5 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,179,0,0" TextWrapping="Wrap" Text="{Binding Age, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="22" Width="107" Grid.Column="2" Grid.ColumnSpan="2"/>
         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,231,0,0" TextWrapping="Wrap"  Text="{Binding Zodiac, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,284,0,0" TextWrapping="Wrap" Text="{Binding Chinese, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-
-        <Button Grid.ColumnSpan="4" Content="OK" HorizontalAlignment="Left" Margin="147,113,0,0" VerticalAlignment="Top" Width="84"  >
-        </Button>
     </Grid>
 </Window>

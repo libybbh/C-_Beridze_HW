@@ -1,8 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace Beridze_1
@@ -60,19 +58,15 @@ namespace Beridze_1
             get { return _dateBirth; }
             set
             {
-                _dateBirth = value;
-                Update();
-                if (_age < 0 || _age > 135)
-                    MessageBox.Show("Illegal date!");
-                OnPropertyChanged();
+               _dateBirth = value;
+               Update();
+               if (_age < 0 || _age > 135)
+               MessageBox.Show("Illegal date!");
+               OnPropertyChanged();
             }
         }
 
-        private async void Ok()
-        {
-            await Task.Run(() => Thread.Sleep(5000));
-            MessageBox.Show("Goodbye!");
-        }
+       
         #endregion
 
         #region Calculates

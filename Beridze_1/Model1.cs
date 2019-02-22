@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace Beridze_1
 {
@@ -28,13 +21,13 @@ namespace Beridze_1
             set { _age = value; }
         }
 
-        public string HoroscopeZod
+        public string Zod
         {
             get { return _zodiac; }
             set { _zodiac = value; }
         }
 
-        public string HoroscopeChi
+        public string Chi
         {
             get { return _chinese; }
             set { _chinese = value; }
